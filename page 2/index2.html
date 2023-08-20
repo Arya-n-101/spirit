@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spirit Webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caladea:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+  <body>
+    <!--Make sure the form has the autocomplete function switched off:-->
+
+    <div class="register">
+      <div class="reg">
+        <h1>Register</h1>
+        <p class="reg-p">
+          <em>Enter the details of the team’s point of contact</em>
+        </p>
+        <br />
+        <div class="form">
+          <form >
+            <form autocomplete="off">
+              <div class="autocomplete" style="width: 300px">
+                <label for="">Name of Sport</label>
+                <input
+                  id="myInput"
+                  type="text"
+                  name="myCountry"
+                  placeholder="Enter name here"
+                />
+              </div>
+            </form>
+            <div id="register2">
+              <div id="reg">
+                <br />
+                <div class="form2">
+                  <p id="enter">Enter details of Member 1</p>
+                  <form class="from3">
+                    <label for="name">Name*</label><br />
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Enter you Name here" 
+                      required
+                    /><br />
+                    <label for="email">Email*</label><br />
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="Enter your Email here"
+                      required
+                    /><br />
+                    <label for="contact">Contact*</label><br />
+                    <input
+                      type="text"
+                      name="contact"
+                      id="contact"
+                      placeholder="Enter your Phone Number here"
+                      required
+                    /><br />
+                  </form>
+                  
+                </div>
+              </div>
+            </div>
+            <button id="next-mem"><em>Next Member -></em></button>
+          </form>
+          <button class="next1">NEXT</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index2.js"></script>
+    
+    <script>
+      autocomplete(document.getElementById("myInput"), countries);
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+.form{
+    background-color: hsl(79, 100%, 71%);
+    display: flex;
+    padding: 2rem;
+    width: 22rem;
+    margin: auto;
+}
+h1{
+    font-family: 'Caladea', serif;
+    font-weight: 500;
+    margin-left: 27.6rem;
+    margin-bottom: 0;
+}
+label{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+input{
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    border: solid white ;
+    color: #ABABAB;
+}
