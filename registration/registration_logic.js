@@ -13,6 +13,7 @@ dropdown.addEventListener("change", function () {
   console.log("Selected index:", selectedIndex);
   console.log("Selected value:", selectedValue);
   console.log("Selected text:", selectedText);
+  // registrationLogic();
 });
 const maleRadio = document.getElementById("maleRadio");
   const femaleRadio = document.getElementById("femaleRadio");
@@ -35,7 +36,7 @@ const maleRadio = document.getElementById("maleRadio");
 const addButton = document.querySelector(".addMember");
 const inputDiv = document.querySelector(".mainDiv");
 
-var countMembers = 0;
+var countMembers = 1;
 function removeMember() {
   countMembers--;
   console.log(countMembers);
@@ -48,19 +49,25 @@ function addNewMember() {
   const name = document.createElement("input");
   name.type = "text";
   name.placeholder = "Enter Name";
+  name.setAttribute('class','hello');
   const email = document.createElement("input");
   email.type = "email";
   email.placeholder = "Enter Email";
+  email.setAttribute('class','hello');
+  const breaks = document.createElement("div");
+  breaks.setAttribute('class','ki');
+  breaks.innerHTML = `<label>Enter details of player ${countMembers}</label><br><br>`
 
   const buttonElement = document.createElement("button");
   buttonElement.className = "delete";
-  buttonElement.innerHTML = "Delete Member";
+  buttonElement.innerHTML = "<i class='fa-solid fa-trash'></i>";
+  buttonElement.setAttribute('class','del');
 
   buttonElement.addEventListener("click", removeMember);
 
   const flexElement = document.createElement("div");
   flexElement.className = "flex";
-
+  inputDiv.appendChild(breaks);
   inputDiv.appendChild(flexElement);
   flexElement.appendChild(name);
   flexElement.appendChild(email);
@@ -70,6 +77,9 @@ function addNewMember() {
 
 function registrationLogic() {
   const submitEnable = document.querySelector(".submitButton");
+  if (selectedIndex == -1) {
+      submitEnable.style.display = "none";
+  }
   if (selectedIndex == 1 || selectedIndex == 2) {
     if (countMembers >= 11 && countMembers <= 16 && gender == 1) {
       submitEnable.style.display = "block";
