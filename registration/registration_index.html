@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
     <link rel="stylesheet" href="registration_css.css">
+    <script src="https://kit.fontawesome.com/877fc73fb5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <select id="myDropdown">
+    <div class="hemlo">
+    <h1>Choose a Sport</h1>
+    <p>Choose a sport and enter the detaisl of team members</p>
+    <div class="green-thing">
+        <label for="myDropdown">Name of Sport*</label>
+    <select id="myDropdown" required>
         <option value="">Select an option</option>
         <option value="option1">Football Male</option>
         <option value="option2">Cricket Male</option>
@@ -39,11 +45,15 @@
         <option value="option26">Swimming Relay</option> 
       </select>
       <div class="mainDiv">
-        
-            <input type="text" placeholder="Enter Captain's name">
+            <label for="">Enter Captain's Name*</label><br>
+            <input type="text" placeholder="Enter Captain's name"><br>
+            <label for="">Enter Captain's Id*</label><br>
             <input type="email" placeholder="Enter Captain's email">
+            <br>
+            <label for="">Enter Captain's contact*</label><br>
             <input type="email" placeholder="Enter Captain's contact number">
             <form>
+                <div class="radio">
                 <label>
                     <input type="radio" name="gender" value="male" id="maleRadio">
                     Male
@@ -52,10 +62,14 @@
                     <input type="radio" name="gender" value="female" id="femaleRadio">
                     Female
                 </label>
+            </div>
             </form>
-            <button class="addMember">Add Member</button>
-      </div>
+        </div>
+        <button class="addMember">Add members  <i class="fa-solid fa-user-plus"></i></button>
       <a href="search\indec.html" class="submitButton">Submit</a>
+    </div>
+</div>
+</div>
     <script src="registration_logic.js"></script>
 </body>
 </html>
