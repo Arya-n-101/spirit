@@ -62,7 +62,7 @@ form input{
     width:10rem ;
 }
 option{
-    background-color: aqua;
+    font-size:1rem;
     width: auto;
     height: 3rem;
 }
