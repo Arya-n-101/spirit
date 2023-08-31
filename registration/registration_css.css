@@ -3,7 +3,88 @@
     display: flex;
     gap:1vw;
 }
-.submitButton
+.ki
+{
+    display: flex;
+    gap:1vw;
+}
+body{
+    display: flex;
+}
+#myDropdown{
+    width: 20.6rem;
+    height: 2.5rem;
+    border: solid white ;
+    margin-bottom: 1.5rem;
+}
+.hemlo{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+label{
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+input{
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 1.5rem;
+    border: solid white ;
+}
+form input{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius:0 ;
+    border: solid white ;
+}
+
+.submitButton 
 {
     display: none;
+    background-color: #141414;
+    color: white;
+    margin:auto;
+    margin-top: 2rem;
+    padding: 1rem 6rem 1rem 6rem;
+}
+
+.green-thing{
+    background-color: hsl(79, 100%, 71%);
+    display: flex;
+    padding: 2rem;
+    width: 25rem;
+    flex-direction: column;
+}
+.hello{
+    width:10rem ;
+}
+option{
+    background-color: aqua;
+    width: auto;
+    height: 3rem;
+}
+.del{
+    height: 2.2rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: solid transparent;
+    cursor: pointer;
+}
+.del: hover{
+    color: gray;
+}
+.addMember{
+width: fit-content;
+margin: auto;
+background-color: transparent;
+border: transparent;
+font-size: 2rem;
+border-radius: 100%;
+cursor: pointer;
+}
+.addMember: hover{
+    color: gray;
 }
