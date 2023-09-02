@@ -10,21 +10,31 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    
+    <section class="head">
     <h1>Register</h1>
+    <p>Enter the details of team's Point of Contact</p>
+    <br><br>
     <div class="form">
         <form>
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name" placeholder="Enter you Name here"><br>
-            <label for="email">Email</label><br>
-            <input type="email" name="email" id="email"  placeholder="Enter your Email here"><br>
-            <label for="password">Password</label><br>
-            <input type="password" name="password" id="password" placeholder="Enter your Password here"><br>
-            <label for="contact">Contact</label><br>
-            <input type="text" name="contact" id="contact" placeholder="Enter your Phone Number here"><br>
+            <label for="name">Name*</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter you Name here" required><br>
+            <label for="email">Email*</label><br>
+            <input type="email" name="email" id="email"  placeholder="Enter your Email here" required><br>
+            <label for="password">Password*</label><br>
+            <input type="password" name="password" id="password" placeholder="Enter your Password here" required><br>
+            <label for="contact">Contact Number*</label><br>
+            <input type="text" name="contact" id="contact" placeholder="Enter your Phone Number here" required><br>
         </form>
+        <div class="lines">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <button class="next">NEXT</button>
     </div>
-
+    <p class="login">Already have an account?<b>Login</b></p>
+</section>
+        
     <script src="index.js"></script>
 </body>
 </html>
