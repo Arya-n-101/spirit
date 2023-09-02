@@ -67,7 +67,7 @@ function addNewMember() {
 
   const flexElement = document.createElement("div");
   flexElement.className = "flex";
-  inputDiv.appendChild(breaks);
+  // inputDiv.appendChild(breaks);
   inputDiv.appendChild(flexElement);
   flexElement.appendChild(name);
   flexElement.appendChild(email);
