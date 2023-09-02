@@ -11,10 +11,6 @@
 body{
     display: flex;
 }
-a{
-    text-decoration: none;
-    font-size: 1.5rem;
-}
 #myDropdown{
     width: 20.6rem;
     height: 2.5rem;
@@ -44,7 +40,10 @@ form input{
     border-radius:0 ;
     border: solid white ;
 }
-
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+}
 .submitButton 
 {
     display: none;
@@ -66,7 +65,7 @@ form input{
     width:10rem ;
 }
 option{
-    font-size:1rem;
+    font-size: 1rem;
     width: auto;
     height: 3rem;
 }
@@ -77,7 +76,7 @@ option{
     border: solid transparent;
     cursor: pointer;
 }
-.del: hover{
+.del:hover{
     color: gray;
 }
 .addMember{
@@ -89,6 +88,28 @@ font-size: 2rem;
 border-radius: 100%;
 cursor: pointer;
 }
-.addMember: hover{
+.addMember:hover{
     color: gray;
+}
+.lines{
+    height: 0.2rem;
+    width: 15rem;
+    margin: auto;
+    display: flex;
+    flex-basis: 1;
+    flex-grow: 1;
+    gap: 0.4rem;
+}
+.line1{
+    background-color: #141414;
+    height: 0.2rem;
+    width: 5rem;
+}
+.line2{
+    background-color: #141414;
+    width: 5rem;
+}
+.line3{
+    background-color: #ABABAb;
+    width: 5rem;
 }
