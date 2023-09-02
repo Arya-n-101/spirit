@@ -3,12 +3,45 @@
     display: flex;
     padding: 2rem;
     width: 22rem;
+    /* margin: auto; */
+    flex-direction: column;
+}
+body{
+    display: flex;
+}
+.lines{
+    height: 0.2rem;
+    width: 15rem;
+    margin: auto;
+    display: flex;
+    flex-basis: 1;
+    flex-grow: 1;
+    gap: 0.4rem;
+}
+.line1{
+    background-color: #141414;
+    height: 0.2rem;
+    width: 5rem;
+}
+.line2{
+    background-color: #ABABAb;
+    width: 5rem;
+}
+.line3{
+    background-color: #ABABAb;
+    width: 5rem;
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: auto;
 }
 h1{
     font-family: 'Caladea', serif;
-    font-weight: 500;
-    margin-left: 38vw;
+    font-weight: 800;
+    font-size: 2.5rem;
+    /* margin-left: 33vw; */
     margin-bottom: 0;
 }
 label{
@@ -20,5 +53,17 @@ input{
     height: 2rem;
     margin-bottom: 1.5rem;
     border: solid white ;
-    color: #ABABAB;
+}
+.next{
+    background-color: #141414;
+    color: white;
+    margin:auto;
+    width: 15rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+
+}
+.login{
+    padding-top :1rem;
+    margin: auto;
 }
